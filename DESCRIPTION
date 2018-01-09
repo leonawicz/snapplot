@@ -24,3 +24,4 @@ Imports:
     dplyr,
     ggplot2,
     leaflet
+RoxygenNote: 6.0.1

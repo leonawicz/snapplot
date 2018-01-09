@@ -1,6 +1,6 @@
 Package: snapplot
-Version: 0.0.0.9000
-Title: Collection of Functions for Graphing SNAP Data Sets. 
+Version: 0.1.0
+Title: Collection of Functions for Graphing SNAP Data Sets
 Description: Provides a suite of functions for graphing and styling plots of publicly available climate science data sets from Scenarios Network for Alaska and Arctic Planning at the University of Alaska Fairbanks. 
     'snapplot' is a memeber of the SNAPverse collection of R package and primarily serves as a supporting package to other SNAPverse packages, namely 'snapstat'. 
     It is recommended to use 'snapstat' directly when working with SNAP data for graphing and analysis.
@@ -23,5 +23,8 @@ Imports:
     magrittr,
     dplyr,
     ggplot2,
-    leaflet
+    leaflet,
+    snaplocs
+Remotes:
+    leonawicz/snaplocs
 RoxygenNote: 6.0.1

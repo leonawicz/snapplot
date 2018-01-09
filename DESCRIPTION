@@ -1,0 +1,26 @@
+Package: snapplot
+Version: 0.0.0.9000
+Title: Collection of Functions for Graphing SNAP Data Sets. 
+Description: Provides a suite of functions for graphing and styling plots of publicly available climate science data sets from Scenarios Network for Alaska and Arctic Planning at the University of Alaska Fairbanks. 
+    'snapplot' is a memeber of the SNAPverse collection of R package and primarily serves as a supporting package to other SNAPverse packages, namely 'snapstat'. 
+    It is recommended to use 'snapstat' directly when working with SNAP data for graphing and analysis.
+Authors@R: c(person("Matthew", "Leonawicz", email = "mfleonawicz@alaska.edu", role = c("aut", "cre")),
+    person("Scenarios Network for Alaska and Arctic Planning", role = c("cph", "fnd"))
+    )
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+URL: https://github.com/leonawicz/snapplot
+BugReports: https://github.com/leonawicz/snapplot/issues
+Suggests: 
+    testthat,
+    knitr,
+    rmarkdown,
+    covr
+VignetteBuilder: knitr
+Imports: 
+    magrittr,
+    dplyr,
+    ggplot2,
+    leaflet

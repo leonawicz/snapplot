@@ -65,28 +65,28 @@ theme_snap <- function(base_size = 14, base_family = "", base_col = "black",
                        base_fill = "white", grid_col = "#F0F0F0") {
   .theme_prep(base_size = base_size, base_family = base_family,
               base_col = base_col, base_fill = base_fill) +
-     theme(plot.title = element_text(face = "bold", size = rel(1.2)),
-           text = element_text(),
-           panel.background = element_rect(colour = NA),
-           plot.background = element_rect(colour = NA),
-           panel.border = element_rect(colour = NA),
-           axis.title = element_text(face = "bold", size = rel(1)),
-           axis.title.y = element_text(angle = 90, vjust = 2),
-           axis.title.x = element_text(vjust = -0.2),
-           axis.text = element_text(),
-           axis.line = element_line(colour = base_col),
-           axis.ticks = element_line(),
-           panel.grid.major = element_line(colour = grid_col),
-           panel.grid.minor = element_blank(),
-           legend.key = element_rect(colour = NA),
-           legend.position = "bottom",
-           legend.direction = "horizontal",
-           legend.key.size = unit(0.2, "cm"),
-           legend.margin = margin(0, 0, 0, 0, "cm"),
-           legend.title = element_text(face = "italic"),
-           plot.margin = unit(c(3, 1, 1, 1), "mm"),
-           strip.background = element_rect(colour = "#f0f0f0", fill = "#f0f0f0"),
-           strip.text = element_text(face = "bold")
+    ggplot2::theme(plot.title = ggplot2::element_text(face = "bold", size = ggplot2::rel(1.2)),
+                   text = ggplot2::element_text(),
+                   panel.background = ggplot2::element_rect(colour = NA),
+                   plot.background = ggplot2::element_rect(colour = NA),
+                   panel.border = ggplot2::element_rect(colour = NA),
+                   axis.title = ggplot2::element_text(face = "bold", size = ggplot2::rel(1)),
+                   axis.title.y = ggplot2::element_text(angle = 90, vjust = 2),
+                   axis.title.x = ggplot2::element_text(vjust = -0.2),
+                   axis.text = ggplot2::element_text(),
+                   axis.line = ggplot2::element_line(colour = base_col),
+                   axis.ticks = ggplot2::element_line(),
+                   panel.grid.major = ggplot2::element_line(colour = grid_col),
+                   panel.grid.minor = ggplot2::element_blank(),
+                   legend.key = ggplot2::element_rect(colour = NA),
+                   legend.position = "bottom",
+                   legend.direction = "horizontal",
+                   legend.key.size = ggplot2::unit(0.2, "cm"),
+                   legend.margin = ggplot2::margin(0, 0, 0, 0, "cm"),
+                   legend.title = ggplot2::element_text(face = "italic"),
+                   plot.margin = ggplot2::unit(c(3, 1, 1, 1), "mm"),
+                   strip.background = ggplot2::element_rect(colour = "#f0f0f0", fill = "#f0f0f0"),
+                   strip.text = ggplot2::element_text(face = "bold")
      )
 }
 
@@ -104,9 +104,9 @@ theme_snapdark <- function(base_size = 14, base_family = "", base_col = "white",
     if ("colour" %in% names(x[[i]])) x[[i]]["colour"] <- list(NULL)
     if ("fill" %in% names(x[[i]])) x[[i]]["fill"] <- list(NULL)
   }
-  x + theme(panel.border = element_rect(fill = NA),
-            legend.background = element_rect(colour = NA),
-            line = element_line(colour = base_col),
-            rect = element_rect(fill = base_fill, colour = base_col),
-            text = element_text(colour = base_col))
+  x + ggplot2::theme(panel.border = ggplot2::element_rect(fill = NA),
+                     legend.background = ggplot2::element_rect(colour = NA),
+                     line = ggplot2::element_line(colour = base_col),
+                     rect = ggplot2::element_rect(fill = base_fill, colour = base_col),
+                     text = ggplot2::element_text(colour = base_col))
 }

@@ -19,6 +19,7 @@ environment:
   _R_CHECK_FORCE_SUGGESTS_: false
 
 build_script:
+  - travis-tool.sh install_github leonawicz/snaplocs
   - travis-tool.sh install_deps
 
 test_script:

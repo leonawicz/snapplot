@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/leonawicz/snapplot?branch=master&svg=true)](https://ci.appveyor.com/project/leonawicz/snapplot)
 [![Coverage Status](https://img.shields.io/codecov/c/github/leonawicz/snapplot/master.svg)](https://codecov.io/github/leonawicz/snapplot?branch=master)
 
-`snapplot` provides a suite of functions for graphing SNAP data sets. It supports other SNAPverse packages, namely [snapstat](https://leonawicz.github.io/snapstat/). It is recommended to use `snapstat` directly when working with SNAP data for graphing and analysis.
+`snapplot` provides a suite of functions for graphing SNAP data sets. It supports other [SNAPverse](https://leonawicz.github.io/snapverse/) packages, namely [snapstat](https://leonawicz.github.io/snapstat/). It is recommended to use `snapstat` directly when working with SNAP data for graphing and analysis.
 
 ## Installation
 
@@ -25,4 +25,12 @@ You can install snapplot from github with:
 ```{r gh-installation, eval = FALSE}
 # install.packages("devtools")
 devtools::install_github("leonawicz/snapplot")
+```
+
+```{r is_md, echo = FALSE}
+is_md <- knitr::opts_knit$get("rmarkdown.pandoc.to") == "markdown_github-ascii_identifiers"
+```
+
+```{r md_pkg_ref, echo = FALSE, results = "asis", eval = is_md}
+cat('## Reference\n\n[Complete package reference and function documentation](https://leonawicz.github.io/snapplot/)')
 ```

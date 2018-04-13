@@ -68,10 +68,13 @@ theme_snap <- function(base_size = 14, base_family = "", base_col = "black",
     ggplot2::theme(panel.background = ggplot2::element_rect(colour = NA),
                    plot.background = ggplot2::element_rect(colour = NA),
                    panel.border = ggplot2::element_rect(colour = NA),
+                   panel.spacing.x = ggplot2::unit(0.25, "cm"),
+                   plot.margin = ggplot2::unit(c(0.5, 1, 0.5, 0.5), "cm"),
                    axis.title = ggplot2::element_text(face = "bold", size = ggplot2::rel(1)),
                    axis.title.y = ggplot2::element_text(angle = 90, vjust = 2),
                    axis.title.x = ggplot2::element_text(vjust = -0.2),
                    axis.line = ggplot2::element_line(colour = base_col),
+                   axis.ticks.length = ggplot2::unit(0.2, "cm"),
                    panel.grid.major = ggplot2::element_line(colour = grid_col),
                    panel.grid.minor = ggplot2::element_blank(),
                    legend.key = ggplot2::element_rect(colour = NA),
@@ -79,7 +82,7 @@ theme_snap <- function(base_size = 14, base_family = "", base_col = "black",
                    legend.direction = "horizontal",
                    legend.title = ggplot2::element_text(face = "italic"),
                    strip.background = ggplot2::element_rect(colour = base_col, fill = grid_col),
-                   strip.text = ggplot2::element_text(face = "bold")
+                   strip.text = ggplot2::element_text(size = base_size, face = "bold")
      )
 }
 

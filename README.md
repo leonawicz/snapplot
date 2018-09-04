@@ -5,6 +5,11 @@ snapplot
 
 [![Travis-CI Build Status](https://travis-ci.org/leonawicz/snapplot.svg?branch=master)](https://travis-ci.org/leonawicz/snapplot) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/leonawicz/snapplot?branch=master&svg=true)](https://ci.appveyor.com/project/leonawicz/snapplot) [![Coverage Status](https://img.shields.io/codecov/c/github/leonawicz/snapplot/master.svg)](https://codecov.io/github/leonawicz/snapplot?branch=master)
 
+SNAPverse R package ecosystem development frozen.
+-------------------------------------------------
+
+*Development of the SNAPverse R package ecosystem has been frozen indefinitely. This project was never directly funded. I began it out of personal interest, but no longer work for SNAP. It will remain archived here for historical reference.*
+
 `snapplot` provides a suite of functions for graphing SNAP data sets. It supports other [SNAPverse](https://leonawicz.github.io/snapverse/) packages, namely [snapstat](https://leonawicz.github.io/snapstat/). It is recommended to use `snapstat` directly when working with SNAP data for graphing and analysis.
 
 Installation
